@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const USER_API_BASE_URL = 'localhost:8045/Course/';
-
+const USER_API_BASE_URL = 'https://localhost:8045/Course';
+//http://localhost:8045/Course/getAllCourses/
 class ApisCourses {
   
     fetchCourse() {
-        return axios.get(USER_API_BASE_URL+"/getAllStudent");
+        return axios.get("https://localhost:8045/Course/getAllCourses/");
     }
 
     fetchCourseById(userId) {
@@ -26,4 +26,4 @@ class ApisCourses {
  
 }  
 
-export default new ApiServices();  
+export default new ApisCourses();  

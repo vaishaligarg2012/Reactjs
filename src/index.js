@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import CourseComponent from './view/ManageCoursesComponent';
+import * as serviceWorker from './serviceWorker';
+//import CourseComponent from './view/ManageCoursesComponent';
 
 
-ReactDOM.render(<CourseComponent />, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(<App />, document.getElementById('root'));
+serviceWorker.unregister();

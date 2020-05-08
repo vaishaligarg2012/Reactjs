@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import courseApis from '../services/ApiCourses';
+import courseApis from '../services/ApisCourses';
 
 class ManageCourses extends Component {
 
@@ -82,5 +82,5 @@ class ManageCourses extends Component {
 
 }
 
-export default ManageCoursesComponent;
+export default ManageCourses;
 
